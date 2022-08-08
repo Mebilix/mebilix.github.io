@@ -1,0 +1,61 @@
+/* Web Fonts ----------------------- */
+
+
+/* Base Styles --------------------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.25em; /* 20px on most screens */
+}
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+  background: linear-gradient(-210deg, #401f0f, #200b01);
+	height: 100vh;
+  color: white;
+}
+
+.container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Styles --------------------- */
+#centerlogo {
+  /* max-width: 200px; */
+  max-width: 65%;
+  min-height: 80vh;
+}
+
+
+/* Media Queries ------------------- */
+
+@media screen and (min-width: 720px) {
+  #centerlogo {
+    max-width: 460px;
+    min-height: 80vh;
+  }
+
+  /* Animation Effects ------------- */
+  body {
+    background: linear-gradient(-210deg, #200b01, #301304, #311507, #401f0f);
+  	background-size: 400% 400%;
+  	animation: gradient 20s ease infinite;
+  }
+
+  @keyframes gradient {
+  	0% {
+  		background-position: 0% 50%;
+  	}
+  	50% {
+  		background-position: 100% 50%;
+  	}
+  	100% {
+  		background-position: 0% 50%;
+  	}
+  }
+}
